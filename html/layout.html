@@ -1,29 +1,64 @@
 <html>
 
-<head></head>
+<head>
+    <style>
+        .header {
+            height: 100px;
+            background-color: blue;
+        }
+
+        .content_section {
+            float: left;
+            width: 33.3%;
+            height: 300px;
+        }
+
+        .ads {
+            background-color: green;
+        }
+
+        .feed {
+            background-color: orange;
+        }
+
+        .chat {
+            background-color: yellow;
+        }
+        .clearFix {
+            clear: both;
+        }
+
+        .feed > div {
+            display: inline-block;margin-left: 50%; transform: translateX(-50%);
+        }
+
+        .feed > div > textarea {
+            padding: 10px;
+        }
+
+        .feed button {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
 
 <body>
-    <div class="main">
-        <div class="header" style="height: 100px; background-color: blue;"></div>
-        <div class="main_content">
-            <div class="ads"
-                style="float: left; width: 33.3%; height: 300px; background-color: green; display: inline-block;"></div>
-            <div class="feed"
-                style="float: left; width: 33.3%; height: 300px;  background-color: orange; display: inline-block;">
-                <div class="post">
-                    <div style="display: inline-block;margin-left: 50%; transform: translateX(-50%);"> 
-                        <textarea name="" id="" cols="30"
-                            rows="10" style="padding: 10px;"></textarea>
-                        <div>
-                            <button style="margin-top: 20px;">Post</button>
-                        </div>
+    <div>
+        <div class="header"></div>
+        <div>
+            <div class="ads content_section"></div>
+            <div class="feed content_section">
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" ></textarea>
+                    <div>
+                        <button>Post</button>
                     </div>
                 </div>
             </div>
-            <div class="chat"
-                style="float: left; width: 33.3%;height: 300px;  background-color: yellow; display: inline-block;">
+            <div class="chat content_section">
             </div>
-            <div style="clear: both;"></div>
+            <div class="clearFix"></div>
         </div>
     </div>
 </body>
