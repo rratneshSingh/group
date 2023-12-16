@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent-nav {
+            padding: 20px 40px 20px 40px;
+            background-color: green;
+        }
+
+        .child-nav {
+            color: white;
+            margin-right: 40px;
+            float: left;
+        }
+    
+        .parent-sidebar {
+            height: calc(100vh - 58px);
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 150px;
+            background-color: cadetblue;
+            float: left;
+        }
+    
+        .content {
+            height: 100%;
+            float: left;
+            height: 100%;
+            width: calc(100% - 150px);
+            overflow-y: scroll;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+
+        .parent-content {
+            padding: 50px;
+        }
+
+        .child-content {
+            width: calc((100%)/3);
+            float: left;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .clear-fix {
+            clear: both;
+        }
+
+        .child-1 {
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .child-content {
+                width: 100%;
+            }
+            .menu {
+                display: inline-block!important;
+            }
+            .child-nav {
+                display: none;
+            }
+        }
+
+        @media only screen and ((min-width: 480px) and (max-width: 760px)) {
+            .child-content {
+                width: 50%;
+            }
+        }
+
+        .sidebar > ul {
+            list-style: none;
+            padding: 50px 10px;
+            margin: 0;
+        }
+
+        .sidebar > ul > li {
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            display: none;
+            float: right;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-nav">
+        <div class="child-nav">Home</div>
+        <div class="child-nav">Home</div>
+        <div class="child-nav">Home</div>
+        <div class="child-nav">Home</div>
+        <div class="child-nav">Home</div>
+        <div class="menu">Menu</div>
+        <div class="clear"></div>
+    </div>
+    <div class="parent-sidebar">
+        <div class="sidebar">
+            <ul>
+                <li><input type="checkbox"> 1000 - 2000</li>
+                <li><input type="checkbox"> 1000 - 2000</li>
+                <li><input type="checkbox"> 1000 - 2000</li>
+                <li><input type="checkbox"> 1000 - 2000</li>
+                <li><input type="checkbox"> 1000 - 2000</li>
+                <li><input type="checkbox"> 1000 - 2000</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="parent-content">
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div><div class="child-content">
+                    <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
