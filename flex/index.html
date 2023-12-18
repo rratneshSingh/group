@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+        }
+        .flex-container {
+            /* height: 100%; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: flex-start; */
+            /* align-items: stretch; */
+            /* align-content: space-between; */
+            gap: 20px;
+        }
+        .flex-item {
+            /* display: inline-block; */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" style="flex-grow: 2;">1 Earum </div>
+        <div class="flex-item" style="flex-grow: 1;">2 Earum </div>
+        <div class="flex-item">3 Earum </div>
+        <!-- <div class="flex-item">3 Earum, quibusdam nam eveniet veniam cumque recusandae?</div> -->
+        <!-- <div class="flex-item">4 Earum, quibusdam nam eveniet veniam cumque recusandae?</div> -->
+    </div>
+</body>
+</html>
