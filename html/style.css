@@ -1,0 +1,37 @@
+.header {
+    height: 100px;
+    background-color: blue;
+}
+
+.content_section {
+    float: left;
+    width: 33.3%;
+    height: 300px;
+}
+
+.ads {
+    background-color: green;
+}
+
+.feed {
+    background-color: orange;
+}
+
+.chat {
+    background-color: yellow;
+}
+.clearFix {
+    clear: both;
+}
+
+.feed > div {
+    display: inline-block;margin-left: 50%; transform: translateX(-50%);
+}
+
+.feed > div > textarea {
+    padding: 10px;
+}
+
+.feed button {
+    margin-top: 20px;
+}
