@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            margin: 0;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 10px 10px 20px 10px;
+        }
+
+        .img > img {
+            width: 300px;
+        }
+
+        .img {
+            position: relative;
+        }
+
+        .rating {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: white;
+            padding: 4px 6px;
+            border-radius: 3px;
+            opacity: .7;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="./../images/face.jpg"/>
+            <div class="rating">
+                <p>4.2 rating</p>
+            </div>
+        </div>
+        <h4>Blue TShirt</h4>
+        <p>Price: $50</p>
+    </div>
+</body>
+</html>
