@@ -1,0 +1,7 @@
+#root {
+    display: flex;
+}
+
+.main_section {
+    flex: 1;
+}
