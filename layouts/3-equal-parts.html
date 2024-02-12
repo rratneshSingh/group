@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            background-color: red;
+            padding: 50px 80px 50px 80px;
+        }
+
+        .child {
+            display: inline-block;
+            width: calc((100%)/3);
+            float: left;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .clear-fix {
+            clear: both;
+        }
+
+        .child-1 {
+            background-color: aqua;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .child {
+                width: 100%;
+            }
+        }
+
+        @media only screen and ((min-width: 480px) and (max-width: 760px)) {
+            .child {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="child">
+            <div class="child-1">Lorem ipsum, dolor sit amet consectetur adipi.</div>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+            height: 100vh;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 150px;
+            background-color: cadetblue;
+            display: inline-block;
+            float: left;
+        }
+    
+        .content {
+            height: 100%;
+            float: left;
+            height: 100%;
+            display: inline-block;
+            width: calc(100% - 150px);
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="sidebar"></div>
+        <div class="content">dhsjdhsjh</div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
